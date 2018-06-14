@@ -1,0 +1,30 @@
+body {
+    background-image: url("../images/space_background.jpg");
+    background-repeat: repeat-x;
+    min-height: 800px;
+}
+
+.main-wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+    color: white;
+}
+
+.navbar {
+    border-radius: 0px;
+}
+
+.table-hover tbody tr:hover td,
+.table-hover tbody tr:hover th {
+    background-color: rgba(25, 3, 107, 0.6);
+}
+
+h4 a {
+    color: lightblue;
+}
+
+
+h4 a:hover {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %} 
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}{{ super() }}{% endblock %} 
+
+{% block content %}
+    
+    <table class="table table-hover">
+        <tbody>
+                <tr><td><b>Name:</b></td><td> {{ results['name'] }}</td></tr>
+                <tr><td><b>Height:</b></td><td> {{ results['height'] }}</td></tr>
+                <tr><td><b>Mass:</b></td><td> {{ results['mass'] }}</td></tr>
+                <tr><td><b>Hair Color:</b></td><td> {{ results['hair_color'] }}</td></tr>
+                <tr><td><b>Skin Color:</b></td><td> {{ results['skin_color'] }}</td></tr>
+                <tr><td><b>Eye Color:</b></td><td> {{ results['eye_color'] }}</td></tr>
+                <tr><td><b>Birth Year:</b></td><td> {{ results['birth_year'] }}</td></tr>
+                <tr><td><b>Gender:</b></td><td> {{ results['gender'] }}</td></tr>
+                <tr><td><b>Homeworld:</b></td><td> {{ results['homeworld'] }}</td></tr>
+                <tr><td><b>Films:</b></td><td> {% for i in results['films'] %}{{ i }}<br>{% endfor %}</td></tr>
+                <tr><td><b>Species:</b></td><td> {% for i in results['species'] %}{{ i }}<br>{% endfor %}</td></tr>
+                <tr><td><b>Vehicles:</b></td><td> {% for i in results['vehicles'] %}{{ i }}<br>{% endfor %}</td></tr>
+                <tr><td><b>Starships:</b></td><td> {% for i in results['starships'] %}{{ i }}<br>{% endfor %}</td></tr>
+                <tr><td><b>Created:</b></td><td> {{ results['created'] }}</td></tr>
+                <tr><td><b>Edited:</b></td><td> {{ results['edited'] }}</td></tr>
+                <tr><td></td><td><b><a href="{{ results['url'] }}">Source URL</a></b></td></tr>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}
