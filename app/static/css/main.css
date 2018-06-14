@@ -1,6 +1,7 @@
 body {
     background-image: url("../images/space_background.jpg");
     min-height: 800px;
+    background-repeat: repeat;
 }
 
 .main-wrapper {
