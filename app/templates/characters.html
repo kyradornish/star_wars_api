@@ -6,7 +6,7 @@
 {% block content %}
 
     <h4 class="text-center"><a href="{{ url_for('sort', by='name') }}">Sort by Name</a> | <a href="{{ url_for('sort', by='height') }}">Sort by Height</a> | <a href="{{ url_for('sort', by='mass') }}">Sort by Mass</a> | <a href="{{ url_for('characters') }}">Reset</a></h4>
-    <p class="text-center">*If height/weight is unknown, it will appear as 0</p>
+    <p class="text-center">*If height/mass is unknown, it will appear as 0</p>
 
     
     <table class="table table-hover">
